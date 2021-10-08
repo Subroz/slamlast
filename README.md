@@ -225,7 +225,7 @@ sudo docker build . -t mirror-bot
 ```
 - Run the image:
 ```
-sudo docker run -p 80:80 mirror-bot
+sudo docker run -d --restart on-failure --name mirror-bot_1 mirror-bot
 ```
 OR
 
